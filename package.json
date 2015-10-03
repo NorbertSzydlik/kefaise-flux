@@ -1,13 +1,18 @@
 {
   "name": "kefaise-flux",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodeunit test"
   },
   "author": "Norbert Szydlik",
   "license": "ISC",
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/kefaise/kefaise-flux.git"
+  },
   "devDependencies": {
     "nodeunit": "^0.9.1",
     "sinon": "^1.17.1"
