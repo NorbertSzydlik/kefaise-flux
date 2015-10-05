@@ -12,17 +12,31 @@ var flux = {};
         }
     };
 
-    function emitChanges(store, storeName) {
+    function emitChanges(store, storeName, doEmitChanges) {
+        if(doEmitChanges !== undefined && !doEmitChanges) {
+            return;
+        }
         var listeners = this.eventListeners[storeName] || [];
 
         listeners.forEach(function(listener) {
             listener(store);
         });
     }
+
+    function isFunction(object) {
+        return !!(object && object.constructor && object.call && object.apply);
+    }
+
     Dispatcher.prototype.dispatch = function(type, data) {
         Object.keys(this.stores).forEach(function(storeName) {
             var store = this.stores[storeName];
-            store.call(store, type, data, emitChanges.bind(this, store, storeName));
+            var emitChangesBind = emitChanges.bind(this, store, storeName);
+
+            if(isFunction(store.dispatch)) {
+                store.dispatch.call(store, type, data, emitChangesBind);
+            } else {
+                store.call(store, type, data, emitChangesBind);
+            }
         }, this);
     };
 

@@ -1,8 +1,8 @@
 {
   "name": "kefaise-flux",
-  "version": "0.0.2",
+  "version": "0.0.3-alpha.2",
   "description": "",
-  "main": "index.js",
+  "main": "src/flux.js",
   "scripts": {
     "test": "nodeunit test"
   },
