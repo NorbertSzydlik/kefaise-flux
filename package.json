@@ -1,6 +1,6 @@
 {
   "name": "kefaise-flux",
-  "version": "0.0.3-alpha.5",
+  "version": "0.0.3-alpha.6",
   "description": "",
   "main": "src/flux.js",
   "scripts": {
@@ -8,10 +8,9 @@
   },
   "author": "Norbert Szydlik",
   "license": "ISC",
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/kefaise/kefaise-flux.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kefaise/kefaise-flux.git"
   },
   "devDependencies": {
     "nodeunit": "^0.9.1",
