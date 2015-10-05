@@ -1,7 +1,9 @@
 Lightweight implementation of flux pattern
 
 1. Usage
+========
 1.1 Store as a handler function
+-------------------------------
 
 ```javascript
 var flux = require("kefaise-flux");
@@ -26,6 +28,7 @@ function simpleStoreListener(store) {
 ```
 
 1.2 Store as an object
+----------------------
 ```javascript
 var flux = require("kefaise-flux");
 
