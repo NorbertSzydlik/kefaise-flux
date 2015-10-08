@@ -1,6 +1,6 @@
 {
   "name": "kefaise-flux",
-  "version": "0.0.3-alpha.6",
+  "version": "0.0.3-alpha.7",
   "description": "",
   "main": "src/flux.js",
   "scripts": {
