@@ -1,4 +1,4 @@
-Lightweight implementation of flux pattern
+Lightweight yet flexible implementation of flux pattern
 
 # Usage
 
